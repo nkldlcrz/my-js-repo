@@ -1,0 +1,26 @@
+let collectionNFT = []
+
+function mintNFT(_color, _shape, _set){
+    const eyes = {
+        color: _color,
+        shape: _shape,
+        set: _set
+    }
+    collectionNFT.push(eyes);
+}
+function listNFTs() {
+    for(let i = 0; i < collectionNFT.length; i++){
+        console.log(collectionNFT[i]);
+    }
+}
+function getTotalSupply () {
+    console.log("TOTAL NFT:" + collectionNFT.length);
+    
+}
+mintNFT("BROWN", "MONOLID","WIDE EYES SET");
+mintNFT("BLUE", "ROUND", "WIDE EYE SET");
+mintNFT("OLIVE", "DOWWNTURNED", "PROMINENT EYE SET");
+
+listNFTs();
+
+getTotalSupply();
